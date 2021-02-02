@@ -1,0 +1,80 @@
+/*CONTAINER*/
+.cv {
+    background-color: var(--front-color);
+    color: var(--text-color);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/*ASIDE*/
+.cv__aside {
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 35%;
+}
+
+/*img*/
+.cv__aside-img {
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+}
+
+.cv__aside-img > img {
+    border-radius: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*name*/
+.cv__aside-name > h2 {
+    margin: 0.2en;
+}
+.cv__aside-name > h4 {
+    margin: 0.2em;
+    text-align: center;
+}
+
+/*contact*/
+.cv__aside-contact > p {
+    margin-bottom: 0;
+}
+
+/*BODY*/
+.cv__body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+}
+
+/*title*/
+.cv__body-title {
+    text-decoration: underline;
+    text-decoration-color: var(--emphasis-color);
+}
+
+/*extract*/
+.cv__body-extract {
+    width: 100%;
+}
+
+/*experience*/
+.cv__body-experience {
+    width: 100%;
+}
+
+.cv__body-experience > h2 {
+    text-align: center;
+}
+
+/*MEDIA QUERY PARA IMPRESORA*/
+@media print {
+    @page {
+        margin:0cm;
+    }
+}
