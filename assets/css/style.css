@@ -198,6 +198,7 @@
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+    justify-content: center;
     margin-bottom: 0;
     width: 100%;
 }
@@ -206,6 +207,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 100px;
 }
 
 .skills-grid__item > .item-icon {
@@ -320,8 +322,8 @@
 textarea.contact-form__input {
     min-width: 100%;
     max-width: 100%;
-    min-height: 150px;
-    max-height: 200px;
+    min-height: 100px;
+    max-height: 120px;
 }
 
 .contact-form__input::placeholder {
@@ -541,10 +543,12 @@ textarea.contact-form__input {
 
     /*skills grid*/
     .skills-grid {
-        grid-template-columns: repeat(2, 45%);
-        justify-content: space-between;
-        margin: 0 auto;
-        width: 58vw;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-around;
+    }
+
+    .skills-grid__item:nth-child(16) {
+        grid-column-start: 2;
     }
 }
 
@@ -578,6 +582,18 @@ textarea.contact-form__input {
         width: 90%;
     }
 
+    /*SKILLS*/
+
+    /*skills grid*/
+    .skills-grid {
+        grid-template-columns: repeat(6, 15%);
+        overflow-x: hidden;
+    }
+
+    .skills-grid__item:nth-child(13) {
+        grid-column-start: 2;
+    }
+
     /*MODAL*/
     
     .modal__close-button {
@@ -602,6 +618,10 @@ textarea.contact-form__input {
     /*SKILLS*/
 
     /*skills grid*/
+    .skills-grid__item {
+        height: 160px;
+    }
+
     .skills-grid__item > .item-icon {
         height: 80px;
         width: 80px;
@@ -654,6 +674,18 @@ textarea.contact-form__input {
 
     html {
         font-size: 32px;
+    }
+
+    /*SKILLS*/
+
+    /*skills grid*/
+    .skills-grid {
+        grid-template-columns: repeat(6, 13%);
+        justify-content: center;
+    }
+
+    .skills-grid__item:nth-child(13) {
+        grid-column-start: 2;
     }
 
     /*MODAL*/
@@ -785,11 +817,6 @@ textarea.contact-form__input {
         align-items: center;
         display: flex;
         flex-direction: column;
-    }
-
-    /*skills grid*/
-    .skills-grid {
-        width: 60%;
     }
 
     /*CONTACT ME*/

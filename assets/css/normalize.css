@@ -41,6 +41,7 @@
  */
 
 * {
+  -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /*Estilos estándar experimentales para scrollbar (Principalmente Firefox)*/
