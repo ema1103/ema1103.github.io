@@ -67,6 +67,7 @@
   
   body {
     margin: 0;
+    overflow-x: hidden !important;
   }
 
   /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
