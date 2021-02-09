@@ -180,12 +180,22 @@
                         <img src="https://picsum.photos/400/300" />
                     </div>
                     <div class="project__description">
-                        <div class="project__title">NOMBRE CORTITO</div>
+                        <div class="project__title">NOMBRE LARGO DEL PROYECTO PORQUE SI</div>
                         <p class="project__paragraph">
                             Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Suscipit, harum earum? Excepturi, soluta. Facere, earum...
                         </p>
-                        <button class="project__button">VER MÁS</button>
+                        <button class="project__button" 
+                                onclick="modal.openFromButtonWithDataset(this);"
+                                data-modalimg="assets/img/profile.png"
+                                data-modaltitle="NOMBRE LARGO DEL PROYECTO PORQUE SI"
+                                data-modaldescription='[
+                                    "Lorem ipsum dolor sit amet blabla blabla bla bla bla",
+                                    "Otro parrafo"
+                                ]'
+                                data-modallink="https://www.google.com">
+                            VER MÁS
+                        </button>
                     </div>
                 </div>
             </div>
@@ -200,7 +210,17 @@
                             Lorem ipsum dolor sit amet consectetur 
                             adipisicing elit. Suscipit, harum earum? Excepturi, soluta. Facere, earum...
                         </p>
-                        <button class="project__button">VER MÁS</button>
+                        <button class="project__button" 
+                                onclick="modal.openFromButtonWithDataset(this);"
+                                data-modalimg="assets/img/profile.png"
+                                data-modaltitle="NOMBRE LARGO DEL PROYECTO PORQUE SI"
+                                data-modaldescription='[
+                                    "Lorem ipsum dolor sit amet blabla blabla bla bla bla",
+                                    "Otro parrafo"
+                                ]'
+                                data-modallink="https://www.google.com">
+                            VER MÁS
+                        </button>
                     </div>
                 </div>
             </div>
@@ -228,7 +248,7 @@
             © 2021 – Emanuel Meza.
         </p>
         <p class="footer__text">
-            Última actualización: 01/02/2021.
+            Última actualización: 08/02/2021.
         </p>
     </footer>
 

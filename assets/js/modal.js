@@ -40,7 +40,9 @@ class Modal {
     openFromButtonWithDataset(el) {
         /*PARSE DATA DESCRIPTION*/
         let data = this.datasetToArray(el.dataset);
-        this.open(data);
+        if (el === document.querySelector(".is-selected .project__button")) { 
+            this.open(data) 
+        };
     }
     
     open(data) {
