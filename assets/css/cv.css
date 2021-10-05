@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    width: 35%;
+    min-width: 35%;
 }
 
 /*img*/
@@ -42,6 +42,11 @@
 /*contact*/
 .cv__aside-contact > p {
     margin-bottom: 0;
+}
+
+/*certifications*/
+.cv__aside-certifications {
+    width: 100%;
 }
 
 /*BODY*/
